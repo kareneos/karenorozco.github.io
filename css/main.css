@@ -3,12 +3,14 @@ nav{
     border: none!important;
 }
 
-
 img[usemap] {
     border: none;
     height: auto;
     max-width: 100%;
     width: auto;
+}
+h2{
+   font-family: 'Rubik', sans-serif;
 }
 /*BACKGROUNDS*/
 .jumbotron, nav{
@@ -28,11 +30,11 @@ footer{
 }
 /*HEADER*/
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #162752;
+    color: #FF7F2B;
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #ED6E79;
+    color: #0070BA;
 }
 /*SECTIONS*/
 /*ABOUT ME*/
@@ -87,9 +89,81 @@ footer{
 .carousel.vertical .item {
     left: 0;
 }
+#myCarousel *{
+    background-image: none;
+}
 /*CONTACT*/
 #contact h2 {
 	position: absolute;
     top: 50%;
     left: 5%;
+}
+/*PROYECTS*/
+.effect-bubba {
+    background: #191A12 ;
+}
+
+.effect-bubba img {
+    opacity: 1;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+.effect-bubba:hover img {
+    opacity: 0.3;
+}
+
+.effect-bubba figcaption::before,
+.effect-bubba figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.7s;
+}
+
+.effect-bubba figcaption::before {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.effect-bubba figcaption::after {
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+
+.effect-bubba p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+}
+
+.effect-bubba:hover figcaption::before,
+.effect-bubba:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.effect-bubba:hover h2,
+.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.titles{
+	position: absolute;
+    top: 5em;
+    
 }

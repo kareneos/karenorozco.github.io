@@ -50,7 +50,7 @@
        margin-right: auto;
        margin-left: auto;
   }
-    header, #home, .pt-1{
+    header, #home, .pt-1, #aboutme .pt-25, #skills h2{
         text-align: center;
   }
   .pt-25 {
@@ -64,7 +64,6 @@
 	margin-top: 2%;
   }
   #skills h2{
-	text-align: center;
     padding-left: 0%;
     padding-bottom: 5%;
   }
@@ -77,4 +76,8 @@
     margin-left: auto;
     margin-right: auto;
  }
+    .titles{
+	position: absolute;
+    top: 38%;    
+    }
 }
