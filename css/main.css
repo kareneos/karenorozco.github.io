@@ -13,8 +13,11 @@ h2{
    font-family: 'Rubik', sans-serif;
 }
 /*BACKGROUNDS*/
-.jumbotron, nav{
+.jumbotron {
     background-color: transparent !important;
+}
+nav, nav button{
+    background-color: rgba(48, 44, 44, 0.8) !important;
 }
 #home {
 	background-image: url("../img/workspace.jpg");
@@ -34,7 +37,11 @@ footer{
     background-color: transparent;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #0070BA;
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    border-bottom: .05em solid white;
 }
 /*SECTIONS*/
 /*ABOUT ME*/
@@ -98,7 +105,7 @@ footer{
     top: 50%;
     left: 5%;
 }
-/*PROYECTS*/
+/*PROJECTS*/
 .effect-bubba {
     background: #191A12 ;
 }

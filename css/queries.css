@@ -24,27 +24,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  p,input,div,span{
-    font-size: 110%;
-  }
-  h1 {
-    font-size: 150%;  
-  }
-  h2 {
-    font-size: 100%;  
-  }
-  h3 {
-    font-size: 120%;  
-  }
-  h4{
-    font-size: 112.5%;  
-  }
-   h5 {
-    font-size: 87.5%;  
-  }
-  h6{
-    font-size: 75%;  
-  }
+    p{
+        font-size: 4vw;
+    }
    button{
        display: block;
        margin-right: auto;
@@ -76,8 +58,14 @@
     margin-left: auto;
     margin-right: auto;
  }
-    .titles{
+  .titles{
 	position: absolute;
     top: 38%;    
-    }
+}
+  .carousel-inner img{
+    height: 40vw;
+}
+  .idioma{
+    padding-right: 90%;
+}
 }
